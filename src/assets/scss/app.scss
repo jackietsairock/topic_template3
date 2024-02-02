@@ -1,0 +1,611 @@
+/*共用*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+:root {
+    --swiper-theme-color: #000;
+}
+p{
+	margin: 0 0 0px 0 !important;
+}
+ul{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+html{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	font-size: 1.2rem;
+	/* border: 1px solid #000; */
+	scroll-behavior: smooth;
+
+  body{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+	
+    
+    }
+}
+
+.App{
+	position: relative;
+	display: block;
+	width: 100%;
+
+	#vision{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		.page_vision_area{
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 65rem;
+			background-color: #c1634a;
+			overflow: hidden;
+			
+			.main_title_text{
+				position: absolute;
+				display: block;
+				z-index: 2;
+				background: url("../images/main_title_text.png") center center no-repeat;
+				background-size: contain;
+				width: 50%;
+				height: 50%;
+				left: 0;
+				right: 0;
+				bottom: 10rem;
+				margin: 0 auto;
+			}
+
+			.vision_background{
+				position: relative;
+				display: block;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				background: url("../images/vision.png") center center no-repeat;
+				background-size: cover;
+			}
+
+		}
+	}
+
+	#introduction{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		.page_introduction_area{
+			position: relative;
+			display: block;
+			width: 100%;
+			background-color: #c1634a;
+			overflow: hidden;
+			text-align: center;
+
+			.text_area{
+				position: relative;
+				display: block;
+				width: fit-content;
+				margin: 10rem auto 10rem auto; 
+				text-align: left;
+
+				p{
+					position: relative;
+					display: block;
+					font-size: 2rem;
+					font-weight: bold;
+					color: #fff;
+					margin: 0 0 0.8rem 0 !important;
+
+					&:last-child{
+						margin: 0 0 0 0 !important;
+					}
+				}
+			}
+		}
+	}
+
+	#article{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		.page_article_area{
+			position: relative;
+			display: block;
+			width: 100%;
+			background-color: #ffdbd2;
+			overflow: hidden;
+			text-align: center;
+			padding: 5rem 5rem;
+			
+			.page_text_area{
+				position: relative;
+				display: block;
+				width: fit-content;
+				padding: 0.5rem 2rem;
+				border-bottom: 1px solid #2c2c2c;
+				margin: 0 auto 0 auto;
+
+				h2.page_title{
+					color: #2c2c2c;
+					font-size: 4rem;
+				}
+
+				&::after{
+					content: "■";
+					position: absolute;
+					display: block;
+					transform: rotate(45deg);
+					font-size: 2rem;
+					left: 0;
+					right: 0;
+					margin: -0.7rem auto 0 auto;
+					color: #2c2c2c;
+				}
+			}
+
+			.slider_area{
+				position: relative;
+				display: block;
+				width: 100%;
+				margin-top: 3rem;
+			}
+		}
+	}
+
+	#news{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		.page_news_area{
+			position: relative;
+			display: block;
+			width: 100%;
+			background-color: #c1634a;
+			overflow: hidden;
+			text-align: center;
+			padding: 5rem 0;
+
+			.page_text_area{
+				position: relative;
+				display: block;
+				z-index: 3;
+				width: fit-content;
+				padding: 0.5rem 2rem;
+				border-bottom: 1px solid #fff;
+				margin: 0 auto 0 auto;
+
+				h2.page_title{
+					color: #fff;
+					font-size: 4rem;
+				}
+
+				&::after{
+					content: "■";
+					position: absolute;
+					display: block;
+					transform: rotate(45deg);
+					font-size: 2rem;
+					left: 0;
+					right: 0;
+					margin: -0.7rem auto 0 auto;
+					color: #fff;
+				}
+			}
+
+			.news_area{
+				position: relative;
+				display: block;
+				z-index: 3;
+				width: 60%;
+				margin: 4rem auto 0 auto;
+
+				.news_box{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: fit-content;
+					margin-bottom: 4rem;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+
+					.news_img_box{
+						position: relative;
+						display: inline-block;
+						vertical-align: top;
+						width: 30%;
+						overflow: hidden;
+
+						&::after{
+							content: "";
+							position: relative;
+							display: block;
+							padding-bottom: 17rem;
+						}
+
+						img{
+							position: absolute;
+							display: block;
+							width: 100%;
+							left: 0;
+							top: 0;
+							bottom: 0;
+							right: 0;
+							margin: auto;
+						}
+					}
+					.news_text_area{
+						position: relative;
+						display: inline-block;
+						vertical-align: top;
+						width: 66%;
+						margin: 0 2%;
+
+						.text_area{
+							text-align: left;
+
+							a{
+								position: relative;
+								display: block;
+
+								p{
+									color: #fff;
+								}
+
+								&:nth-child(1){
+									margin-bottom: 1rem;
+
+									p{
+										color: #FBC010;
+										font-size: 1.8rem;
+										font-weight: bold;
+									}
+
+									&:hover{
+										p{
+											color: #f00;
+										}
+									}
+								}
+
+								&:nth-child(2){
+									p{
+										-webkit-box-orient: vertical;
+										-webkit-line-clamp: 4;
+										display: -webkit-box;
+										font-size: 1.2rem;
+										font-weight: 700;
+										overflow: hidden;
+										position: relative;
+										text-align: left;
+										text-decoration: none;
+										text-overflow: ellipsis;
+										width: 100%;
+									}
+
+									&:hover{
+										p{
+											color: #ffe492;
+										}
+									}
+								}
+							}
+						}
+
+						.button_area{
+							position: relative;
+							display: block;
+							left: 0;
+							bottom: 0;
+							text-align: left;
+							padding: 0.5rem 1rem;
+							border: 1px solid #fff;
+							width: fit-content;
+							margin-top: 2rem;
+
+							&:hover{
+								border: 1px solid #FBC010;
+
+								a{
+									.news_button_icon{
+										content: url("../images/news_icon_hover.png");
+									}
+
+									p{
+										color: #FBC010;
+									}
+								}
+							}
+
+							a{
+								position: relative;
+								display: block;
+
+								.news_button_icon{
+									position: relative;
+									display: inline-block;
+									vertical-align: middle;
+									width: 5rem;
+								}
+
+								p{
+									position: relative;
+									display: inline-block;
+									vertical-align: middle;
+									color: #fff;
+									font-size: 1.4rem;
+								}
+							}
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:2250px){
+	
+}
+@media screen and (max-width:2150px){
+	
+}
+@media screen and (max-width:1920px){
+	html{
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width:1770px){
+	html{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width:1600px){
+	html{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width:1460px){
+	html{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width:1366px){
+	html{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width:1280px){
+	html{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (min-width:1025px){
+	
+}
+@media screen and (max-width:1024px){
+	html{
+		font-size: 1rem;
+    }
+
+	.App{
+	
+		#vision{
+	
+			.page_vision_area{
+
+				.main_title_text{
+					background: url("../images/main_title_text.png") center center no-repeat;
+					background-size: contain;
+					width: 90%;
+					height: 30%;
+					bottom: 5rem;
+				}
+
+				.vision_background{
+					background: url("../images/mb/vision_1024x1366.png") center center no-repeat;
+					background-size: cover;
+				}
+	
+			}
+		}
+
+		#article{
+	
+			.page_article_area{
+				padding: 5rem 0rem;
+				
+			}
+		}
+
+		#introduction{
+	
+			.page_introduction_area{
+				
+	
+				.text_area{
+					width: 90%;
+	
+					p{
+						font-size: 1.8rem;
+						margin: 0 0 3rem 0 !important;
+	
+					}
+				}
+			}
+		}
+
+		#news{
+			.news_area{
+				width: 90% !important;
+
+				.news_box{
+
+					.news_img_box{
+						display: block !important;
+						width: 100% !important;
+
+						&::after{
+							padding-bottom: 23rem !important;
+						}
+
+					}
+					.news_text_area{
+						display: block !important;
+						width: 100% !important;
+						margin: 2rem 2% 0 2% !important;
+
+						.text_area{
+
+							a{
+								&:nth-child(1){
+
+									p{
+										-webkit-box-orient: vertical;
+										-webkit-line-clamp: 2;
+										display: -webkit-box;
+										color: #FBC010;
+										font-size: 1.8rem;
+										overflow: hidden;
+										position: relative;
+										text-align: left;
+										text-decoration: none;
+										text-overflow: ellipsis;
+										width: 100%;
+									}
+								}
+
+								&:nth-child(2){
+									p{
+										font-size: 1.5rem !important;
+									}
+
+								}
+							}
+						}
+
+						.button_area{
+							margin-left: auto !important;
+							margin-right: auto !important;
+							
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}
+@media screen and (max-width:991px){
+	html{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width:768px){
+	html{
+		font-size: 0.9rem;
+	}
+
+	.App{
+	
+		#vision{
+	
+			.page_vision_area{
+				height: 50rem;
+
+				.vision_background{
+					background: url("../images/mb/vision_768x1280.png") center center no-repeat;
+					background-size: cover;
+				}
+	
+			}
+		}
+	}
+}
+@media screen and (max-width:630px){
+	html{
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width:575px){
+	html{
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width:375px){
+	html{
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width:360px){
+	html{
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width:320px){
+	html{
+		font-size: 0.8rem;
+	}
+}
+@media screen and (orientation: landscape) and (max-width:1024px) {
+	/* body{
+		min-height: 95em;
+	} */
+}
+@media screen and (orientation: landscape) and (max-width:980px) {
+	/* body{
+		min-height: 95em;
+	} */
+}
+@media screen and (orientation: landscape) and (max-width:846px) {
+	/* html{
+	    font-size: 1.3rem;
+	} */
+}
+@media screen and (orientation: landscape) and (max-width:812px) {
+	/* body{
+		min-height: 75em;
+	} */
+}
+@media screen and (orientation: landscape) and (max-width:720px) {
+	/* body{
+		min-height: 65em;
+	} */
+}
+@media screen and (orientation: landscape) and (max-width:640px) {
+	/* body{
+		min-height: 69em;
+	} */
+}
+@media screen and (orientation: landscape) and (max-width:620px) {
+	/* body{
+		min-height: 69em;
+	} */
+}
+@media screen and (orientation: landscape) and (max-width:375px) {
+	/* body{
+		min-height: 69em;
+	} */
+}

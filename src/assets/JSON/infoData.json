@@ -1,0 +1,63 @@
+{
+  "menu": [
+    {
+      "title": "首頁",
+      "url": "#vision",
+      "isAnchor": true
+    },
+    {
+      "title": "引言",
+      "url": "#introduction",
+      "isAnchor": true
+    },
+    {
+      "title": "文章報導",
+      "url": "#article",
+      "isAnchor": true
+    },
+    {
+      "title": "延伸閱讀",
+      "url": "#news",
+      "isAnchor": true
+    }
+  ],
+  "title": "言論自由",
+  "description": "台灣言論自由承載了社會多元與包容的價值，是民主社會的支柱之一。這片土地上，言論的自由象徵著尊重與對話的權利，引領著思想的交流，激發更廣泛的討論與創新。它超越種種界限，鼓舞人們敢於表達、探索，營造出充滿活力的社會。這權利是我們共同捍衛的核心，也是自由民主的光輝象徵。",
+  "url": "https://www.businesstoday.com.tw/article/category/183027/post/202211290024",
+  "slider": [
+    {
+      "title": "六四天安門33週年》台美發聲悼念、香港燭光紀念被禁...外交部巧妙用簡體嗆：翻牆者快查「禁忌5字」",
+      "url": "https://www.businesstoday.com.tw/article/category/183025/post/202206040005",
+      "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/130086/09.jpg_1140x855.jpg"
+    },
+    {
+      "title": "白紙革命延燒》誰說中共不會倒？范疇：當這情況發生「中共不出兩年必然解體」，一垮就是突然垮",
+      "url": "https://www.businesstoday.com.tw/article/category/183027/post/202211280019",
+      "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/137636/shutterstock_1376982239.jpg_1140x855.jpg"
+    },
+    {
+      "title": "白紙革命》新疆一把火燒出人民憤怒　警暴打BBC記者「幫防疫」，中國官媒前總編看不下去：民眾有表達意見權利",
+      "url": "https://www.businesstoday.com.tw/article/category/183025/post/202211280006",
+      "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/137623/08.jpg_1140x855.jpg"
+    },
+    {
+      "title": "當他讓中國脫口秀也消失…＼中國國家主席 習近平",
+      "url": "https://www.businesstoday.com.tw/article/category/183025/post/202312270010",
+      "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/154264/136.jpg_1140x855.jpg"
+    }
+  ],
+  "news": [
+    {
+      "title": "相約海德公園決勝負 站肥皂箱暢所欲言",
+      "description": "一八五五年十月十四日，海德公園出現第一個肥皂箱演說家，此後，肥皂箱成為言論自由的象徵。馬克思認為的「武裝暴動革命」，沒有在英國發生。因為，再激烈的矛盾，都能靠言論來決鬥！",
+      "url": "https://www.businesstoday.com.tw/article/category/183034/post/202311080051",
+      "image": "https://doqvf81n9htmm.cloudfront.net/data/crop_article/152239/how.jpg_1140x855.jpg"
+    },
+    {
+      "title": "「你在中國可以罵共產黨，但不能罵習近平，不然第二天警察就來了！」台商赴陸發展30年　若走不了可以怎麼活下去？",
+      "description": "中國經濟的逆風近幾年愈來愈大，使得深耕中國20~30年的眾多中小企業台商，不少人開始外移、遷回台灣，或轉進東南亞，但並非所有台商都走得了。在廣東東莞有多年設廠經驗的台商廖金璋認為，老台商想要離開中國的原因不一而足，從中國經濟走下坡、美中貿易戰導致外貿接單大減、2021年中國頻傳無預警停電，以及2022年因疫情動輒封城使製造業台商生存不易，全都有關係。輔導中國台商多年的華信統領企業管理諮詢顧問有限公司總經理袁明仁則指出，大多數大陸台商沒有能力搬回台灣或外移，若要繼續在中國經營下去，關鍵之一是二代要願意接班，惟需注意碳排放、工業用地稅負門檻，以及數據安全審查等規定。",
+      "url": "https://www.businesstoday.com.tw/article/category/183025/post/202310160041",
+      "image": "https://doqvf81n9htmm.cloudfront.net/data/walterliu_210/shutterstock_2185314911.jpg"
+    }
+  ]
+}
